@@ -703,7 +703,7 @@
 % Define an environment for cvhonor
 \newenvironment{cvhonors}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-2mm}
+  \vspace{4.0mm}
   \begin{flushleft}
     \begin{cvitems}
 }{%
@@ -713,6 +713,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
+  \vspace{-4mm}
   \item \honordatestyle{#4}, \honortitlestyle{#2}, \honorpositionstyle{#1}, \honorlocationstyle{#3} \\
 }
 
